@@ -1,0 +1,243 @@
+.cards {
+  position: relative;  
+  list-style-type: none;
+  padding: 0;
+  max-width: 34em;
+  margin: 20% auto 0;
+}
+
+.card {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  height: 350px;
+  width:450px;
+  background: #ccc;
+  border-radius: 30px;
+  padding: 40px;
+  box-shadow: 0 0 40px #000;
+  transform: translateY(0) rotate(4deg) translateX(25px) scale(1);
+  transform-origin: 0 0;
+  border-color: #000;
+  border-width: 4px;
+  transition: transform 0.6s cubic-bezier(.8,.2,.1,0.8) 0.1s,
+    background 0.4s linear;
+  
+  cursor: pointer;
+  user-select: none;
+  
+    
+  :last-child { margin-bottom: 0; }
+
+}
+.card:before {
+  content: "";
+  
+  
+}
+
+.card--next { 
+  z-index: 5; 
+  
+  content:"";
+  transform: translateY(-25px) rotate(4deg) translateX(25px) scale(1);
+}
+
+.card--out {
+  animation: card-out 0.5s cubic-bezier(.8,.2,.1,0.8);
+  transform: translateY(-50px) rotate(8deg) translateX(55px) scale(0.85);
+  z-index: 1;
+  background: #fff;
+}
+
+@keyframes card-out {
+  0% { z-index: 20; transform: translateY(0px) rotate(-4deg); }
+  50% { transform: translateY(-120%) rotate(-5deg) translateX(-40px); }
+  80% { z-index: 1; }
+  100% { transform: translateY(-50px) rotate(8deg) translateX(55px) scale(0.95); }
+}
+
+.card--current {
+  cursor: auto;
+  user-select: auto;
+  position: relative;
+  z-index: 10;
+  opacity: 1;
+  background:#000;
+  transform: rotate(-1deg) translateX(0%) scale(1);
+}
+
+.card .img1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.card .img1 span {
+  width: 45%;
+  height: 100%;
+  background: url(https://picsum.photos/450/350/?image=1042);
+  display:flex;
+  transition: 0.5s;
+}
+
+
+.card .img1 span:nth-child(1) {
+  background-position: 0;
+  transition-delay: 0;
+}
+.card .img1 span:nth-child(2) {
+  background-position: 33.33%;
+  transition-delay: 0.1s;
+}
+.card .img1 span:nth-child(3) {
+  background-position: 66.66%;
+  transition-delay: 0.2s;
+}
+.card .img1 span:nth-child(4) {
+  background-position: 100%;
+  transition-delay: .4s;
+}
+
+.card:hover .img1 > span {
+  transform: translateY(-100%);
+}
+
+.card .img2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.card .img2 span {
+  width: 55%;
+  height: 100%;
+  background: url(https://picsum.photos/450/350/?image=1027);
+  transition: 0.5s;
+}
+
+
+.card .img2 span:nth-child(1) {
+  background-position: 0;
+  transition-delay: 0;
+}
+.card .img2 span:nth-child(2) {
+  background-position: 33.33%;
+  transition-delay: 0.1s;
+}
+.card .img2 span:nth-child(3) {
+  background-position: 66.66%;
+  transition-delay: 0.2s;
+}
+.card .img2 span:nth-child(4) {
+  background-position: 100%;
+  transition-delay: 0.3s;
+}
+
+.card:hover .img2 > span {
+  transform: translateY(-100%);
+}
+
+
+.card .img3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.card .img3 span {
+  width: 55%;
+  height: 100%;
+  background: url(https://picsum.photos/450/350/?image=1022);
+  transition: 0.5s;
+}
+
+
+.card .img3 span:nth-child(1) {
+  background-position: 0;
+  transition-delay: 0;
+}
+.card .img3 span:nth-child(2) {
+  background-position: 33.33%;
+  transition-delay: 0.1s;
+}
+.card .img3 span:nth-child(3) {
+  background-position: 66.66%;
+  transition-delay: 0.2s;
+}
+.card .img3 span:nth-child(4) {
+  background-position: 100%;
+  transition-delay: 0.3s;
+}
+
+.card:hover .img3 > span {
+  transform: translateY(-100%);
+}
+
+
+.card .img4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.card .img4 span {
+  width: 55%;
+  height: 100%;
+  background: url(https://picsum.photos/450/350/?image=1028);
+  transition: 0.5s;
+}
+
+
+.card .img4 span:nth-child(1) {
+  background-position: 0;
+  transition-delay: 0;
+}
+.card .img4 span:nth-child(2) {
+  background-position: 33.33%;
+  transition-delay: 0.1s;
+}
+.card .img4 span:nth-child(3) {
+  background-position: 66.66%;
+  transition-delay: 0.2s;
+}
+.card .img4 span:nth-child(4) {
+  background-position: 100%;
+  transition-delay: 0.3s;
+}
+
+.card:hover .img4 > span {
+  transform: translateY(-100%);
+}
+.card:hover .content {
+  transform: translateY(0%);
+  transition: 0.6s;
+  transition-delay: 0.4s;
+}
+
+.content {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  padding: 20px 20px;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+}
+
+
+
+

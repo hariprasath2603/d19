@@ -1,0 +1,48 @@
+
+
+svg {
+  position: absolute;
+  left: 48%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  max-width: 300px;
+  overflow: visible;
+}
+
+.floor_line1 {
+  stroke-dasharray: 300;
+}
+
+.floor_line2 {
+  stroke-dasharray: 140;
+}
+
+.floor_line3 {
+  stroke-dasharray: 140;
+}
+
+.info {
+  color: #254355;
+  text-align: left;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.info h1 {
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: bold;
+  letter-spacing: -0.3px;
+  margin-bottom: 5px;
+}
+
+.info p {
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+.info p a {
+  color: #fbc03e;
+}

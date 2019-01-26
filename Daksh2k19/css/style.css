@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css?family=Homenaje");
+@import url("https://www.w3schools.com/w3css/4/w3.css");
+@font-face {
+  font-family:OstrichSans-Black;
+  src: url('../../fonts/ostrich-sans/ostrichSans-Black.otf'); 
+}
+
+
+
+.p-canvas-webgl {
+  position: fixed;
+  z-index: 1;
+  top: 10;
+  left: 0;
+}
+
+.p-summary {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  color: #fff;
+  font-family: 'Homenaje', sans-serif;
+  text-align: center;
+}
+.p-summary h1 {
+  margin: 0 0 0.1em;
+  font-size: 18vh;
+  font-weight: 400;
+}
+.p-summary p {
+  margin: 0;
+  font-size: 3vh;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.p-summary a {
+  color: #fff;
+}
+
+
+.topnav {
+  overflow: hidden;
+  
+  }
+  
+  .topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  border-bottom: 3px solid transparent;
+  letter-spacing: 10px;
+  font-weight: 400;
+  }
+  
+  .topnav a:hover {
+  border-bottom: 3px solid red;
+  }
+  
+  .topnav a.active {
+  border-bottom: 3px solid red;
+  }
+
+
+  #clockdiv{
+  
+  color:#fff;
+  display: inline-block;
+  font-weight: 80;
+  text-align: center;
+  font-size: 20px;
+}
+
+#clockdiv > div{
+  padding: 10px;
+  border-radius: 15px;
+  background: #000;
+  display: inline-block;
+  letter-spacing:.3em;
+  height:200px;
+  width:200px;
+}
+
+#clockdiv div > span{
+  padding: 15px;
+  border-radius: 10px;
+  background: #000;
+  display: inline-block;
+  letter-spacing:.5em;
+}
+
+.smalltext{
+  padding-top: 8px;
+  font-size: 30px;
+  letter-spacing:.3em;
+}
+  
